@@ -2249,7 +2249,9 @@ function webViewerInitialized() {
     appConfig.toolbar.openFile.hidden = true;
     appConfig.secondaryToolbar.openFileButton.hidden = true;
   } else {
-    fileInput.value = null;
+    appConfig.toolbar.openFile.hidden = true;
+    appConfig.secondaryToolbar.openFileButton.hidden = true;
+   // fileInput.value = null;
   }
 
   fileInput.addEventListener("change", function (evt) {
