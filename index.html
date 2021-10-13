@@ -394,5 +394,12 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     </div> <!-- outerContainer -->
     <div id="printContainer"></div>
+    <script>
+      function applyConfig() {
+          PDFViewerApplication.preferences.set('externalLinkTarget', 2);
+      }
+      document.addEventListener('DOMContentLoaded', applyConfig, true);
+  </script>
   </body>
+
 </html>
